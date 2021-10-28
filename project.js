@@ -30,8 +30,8 @@ function addLecture(e) {
     else {
         const newLecture = new Lecture(lecture, grade);
 
-        UI.addLectureToUI(newLecture); // Arayüze film ekleme
-        Storage.addLectureToStorage(newLecture); // Storage'a Film Ekleme
+        UI.addLectureToUI(newLecture); // Show lecture on UI
+        Storage.addLectureToStorage(newLecture); // Add lecture into the Storage
 
         UI.displayMessages("Lecture added successfully.", "success");
 
